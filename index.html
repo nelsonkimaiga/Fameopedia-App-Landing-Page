@@ -7,12 +7,18 @@
 <meta name="description" content="">
 <link rel="icon" href="favicon.png">
 	<title>Fameopedia Brands | Coming Soon!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
 	 <!--font awesome-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+<link rel="stylesheet" href="css/slippry.css"/>
 
 </head>
 <body>
@@ -29,7 +35,7 @@
                     <li><img src="img/slider-3.png"></li>
                 </ul>  
 
-                <img id="mobile-phones" src="img/mobile-phones.png" alt="fameopedia" style="display:none">              
+                <!-- <img id="mobile-phones" src="img/mobile-phones.png" alt="fameopedia" style="display:none">               -->
 
             <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
             <script src="js/slippry.min.js"></script>
@@ -48,12 +54,13 @@
     <div id="brand">
     <img src="img/logo.png">
     </div>
-    <p>Fameopedia is an app that helps you view, push organise and market your own brand.</p>
-    <h5>We're launching sooon in...</h5>
-    <ul class="playstore">
+    <p class="lead">Fameopedia is an app that helps you view, push organise and market your own brand.</p>
+    <h5 class="lead2">We're launching sooon in ...</h5>
+    <ul class="stores trimmed_list">
     <li><a href="#"><img src="img/android.png"></a></li>
     </ul>
     <section class="social">
+    <h4>Follow our updates on social media</h4>
     <ul>
     	<li><a href="https://facebook.com/" target="facebook"><i class="fa fa-github-circle fa-2x"></i></a><li>
     	<li><a href="https://twitter.com/" target="twitter"><i class="fa fa-twitter-circle fa-2x"></i></a><li>
@@ -61,6 +68,24 @@
     </ul>    	
     </section>	
     </div>
-    	</div>    
+    	</div>  
+    <div class="form">
+    <form id="subscribe" method="post" action="">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2 col-sm-6">
+          <div class="form-group margin-bottom">
+            <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email address&hellip;" required>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <button type="submit" class="btn btn-success btn-block margin-bottom-lg"
+              data-toggle="popover" data-trigger="hover">
+            Subscribe to Fameoepedia<i class="fa fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    	
+    </div>  
 </body>
 </html>

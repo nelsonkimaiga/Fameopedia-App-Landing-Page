@@ -4,7 +4,7 @@
 }
 
 html{
-	background: url(../img/background.jpg) no-repeat center center fixed;
+	/*background: url(../img/background.jpg) no-repeat center center fixed;*/
    position: relative;
    min-height: 100%;
 -webkit-background-size: cover;
@@ -17,7 +17,7 @@ html{
 body {
   font-family: 'Roboto','Helvetica', Tahoma;
   font-size: 14px;
-  background: #371115 url(../img/bg.jpg) top center no-repeat;
+  background: #371115 url(../img/background.jpg) top center no-repeat;
   color: #FFF;
   padding-top: 50px;  
   }
@@ -28,4 +28,140 @@ body {
 -o-transition: all 0.3s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;  
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 25px;  
+}
+a {
+  color: #51C4CC;
+}
+a:focus, a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+figure#brand {
+  margin-top: 30px;
+}
+
+
+.social_links li img {
+  max-width: 40px;
+}
+.trimmed_list li:hover img {
+  opacity: .7;
+}
+
+.slider-wrapper.theme-default {
+  max-height: 580px;
+  overflow-y: hidden;
+}
+
+
+.container {
+  width: auto;
+  max-width: 960px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.fh_in img {
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fh_in {
+  text-align: center;
+}
+h5.lead2 {
+  color: #51C4CC;
+  font-size: .9em;
+  margin: 20px 0px;
+}
+p.lead {
+  margin: 15px 0px 50px;
+}
+
+
+
+.trimmed_list li {
+  display: inline-block;
+}
+.trimmed_list {
+  padding-left: 0px;
+  list-style: none;
+}
+section.social h4 {
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+section.social_follow {
+  margin-top: 40px;
+}
+
+
+
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    text-align: center;
+  }  
+  ul.trimmed_list li img {
+    width: 100%;
+    height: auto;
+  }
+  ul.trimmed_list li {
+    width: 30%;
+    margin: 0px 1%;
+  }
+  ul.trimmed_list {
+    text-align: center;
+  }
+  ul.social_links.trimmed_list li {
+    width: auto;
+  }
+  h1 {
+    font-size: 2.4em;
+  }
+
+
+  body {
+    padding-top: 0px;  
+  }  
+  figure#brand_mobile img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px 10%;
+    width: 210px;
+  }
+  figure#brand_mobile {
+    display: block !important;
+    width: 100%;
+    height: auto;
+  }
+
+  #brand, #slippry {
+    display: none;
+  }
+  ul.sy-pager {
+    display: none !important;
+  }
+
+  #mobile-phones { display: block !important; }
+  .sy-controls li a:link, .sy-controls li a:visited {
+    display: none !important;
+  }
 }
