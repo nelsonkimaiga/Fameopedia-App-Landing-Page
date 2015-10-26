@@ -20,6 +20,29 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 <link rel="stylesheet" href="css/slippry.css"/>
 
+    <!-- countdown timer -->
+    <script type="text/javascript">
+    var deadline = '31/12/2015';
+
+    function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+getTimeRemaining(deadline).minutes
+
+</script>
+
 </head>
 <body>
 <div class="container">
@@ -55,7 +78,28 @@
     <img src="img/logo.png">
     </div>
     <p class="lead">Fameopedia is an app that helps you view, push organise and market your own brand.</p>
-    <h5 class="lead2">We're launching sooon in ...</h5>
+    
+<div id="clockdiv">
+	<h5 class="lead2">We're launching sooon in ...</h5>
+	<script type="text/javascript">
+function initializeClock(id, endtime){
+  var clock = document.getElementById(id);
+  var timeinterval = setInterval(function(){
+    var t = getTimeRemaining(endtime);
+    clock.innerHTML = 'days: ' + t.days + '<br>' +
+                      'hours: '+ t.hours + '<br>' +
+                      'minutes: ' + t.minutes + '<br>' +
+                      'seconds: ' + t.seconds;
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  },1000);
+}
+initializeClock('clockdiv', deadline);
+
+	</script>
+</div>
+
     <ul class="stores trimmed_list">
     <li><a href="#"><img src="img/android.png"></a></li>
     </ul>
@@ -78,9 +122,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
-          <button type="submit" class="btn btn-success btn-block margin-bottom-lg"
-              data-toggle="popover" data-trigger="hover">
-            Subscribe to Fameoepedia<i class="fa fa-envelope"></i>
+          <button type="submit">Subscribe to Fameoepedia<i class="fa fa-envelope"></i>
           </button>
         </div>
       </div>
