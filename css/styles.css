@@ -13,3 +13,19 @@ html{
   background-size: cover;
   animation: animatedBackground 40s linear infinite;
 }
+
+body {
+  font-family: 'Roboto','Helvetica', Tahoma;
+  font-size: 14px;
+  background: #371115 url(../img/bg.jpg) top center no-repeat;
+  color: #FFF;
+  padding-top: 50px;  
+  }
+
+  a, a:hover, div, div:hover, figure, figure:hover, li, li:hover, img, img:hover {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;  
+}
