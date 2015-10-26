@@ -1,7 +1,15 @@
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
 html{
 	background: url(../img/background.jpg) no-repeat center center fixed;
-}
-.logo{
-	/*display: none;*/
-	position: center;
+   position: relative;
+   min-height: 100%;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation: animatedBackground 40s linear infinite;
 }
