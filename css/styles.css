@@ -82,7 +82,7 @@ h5.lead2 {
   font-size: 30px;
   margin: 20px 0px;
   font-weight: 1000;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 p.lead {
   margin: 15px 0px 50px;
@@ -214,3 +214,12 @@ p.lead {
     color:white;
     margin-right:10px;
 }
+
+.maintxt {
+    position: absolute;
+    top: 120px;
+    width: 260px;
+    left: 50%;
+    margin-left: -140px;
+    text-align:center;
+  }
