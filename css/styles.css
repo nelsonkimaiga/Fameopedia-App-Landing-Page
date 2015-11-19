@@ -15,7 +15,7 @@ html{
 
 body {
   /*font-family: 'Roboto','Helvetica', Tahoma;*/
-  font-size: 14px;
+  font-size: 25px;
   background: #371115 url(../img/background.jpg) top center no-repeat;
   color: #FFF;
   padding-top: 50px;
@@ -180,7 +180,7 @@ p.lead {
     padding: 8px;
 }
 #counter-default .timer-number {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 10px;
     font-weight: 900;
     font-family:'Agency FB';
@@ -194,6 +194,22 @@ p.lead {
     color:#fff;
 }
 
-#clockdiv{
+/*moving icon*/
+#movingicon {
+    margin-top:20px;
+    text-align:center;
+     vertical-align:central;
+    color:rgb(255, 153, 0);
+    font-weight:900;
+    font-size:80px;
+    letter-spacing:3px;
+}
 
+.icon-color{
+    color:#3366ff;
+}
+
+.subscribe-icon{
+    color:white;
+    margin-right:10px;
 }
