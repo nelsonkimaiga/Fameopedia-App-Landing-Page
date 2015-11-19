@@ -79,8 +79,9 @@ figure#brand {
 }
 h5.lead2 {
   color: #51C4CC;
-  font-size: .9em;
+  font-size: 30px;
   margin: 20px 0px;
+  font-weight: 1000;
 }
 p.lead {
   margin: 15px 0px 50px;
@@ -191,4 +192,8 @@ p.lead {
     font-weight:800;
     letter-spacing:5px;
     color:#fff;
+}
+
+#clockdiv{
+
 }
