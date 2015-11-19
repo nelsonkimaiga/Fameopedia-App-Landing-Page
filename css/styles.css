@@ -11,15 +11,16 @@ html{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  animation: animatedBackground 40s linear infinite;
 }
 
 body {
-  font-family: 'Roboto','Helvetica', Tahoma;
+  /*font-family: 'Roboto','Helvetica', Tahoma;*/
   font-size: 14px;
   background: #371115 url(../img/background.jpg) top center no-repeat;
   color: #FFF;
-  padding-top: 50px;  
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;  
   }
 
   a, a:hover, div, div:hover, figure, figure:hover, li, li:hover, img, img:hover {
@@ -47,9 +48,6 @@ figure#brand {
 }
 
 
-.social_links li img {
-  max-width: 40px;
-}
 .trimmed_list li:hover img {
   opacity: .7;
 }
@@ -97,16 +95,6 @@ p.lead {
   padding-left: 0px;
   list-style: none;
 }
-section.social h4 {
-  text-transform: uppercase;
-  font-size: .8em;
-  letter-spacing: 4px;
-  font-weight: 300;
-}
-section.social_follow {
-  margin-top: 40px;
-}
-
 
 
 .banner { position: relative; overflow: auto; }
@@ -130,9 +118,7 @@ section.social_follow {
   ul.trimmed_list {
     text-align: center;
   }
-  ul.social_links.trimmed_list li {
-    width: auto;
-  }
+
   h1 {
     font-size: 2.4em;
   }
@@ -164,4 +150,17 @@ section.social_follow {
   .sy-controls li a:link, .sy-controls li a:visited {
     display: none !important;
   }
+}
+
+.social-links {
+    text-align:center;
+     vertical-align:central;
+     margin-top:40px;
+     margin-bottom:30px;
+}
+.social-links a {
+    color:#3366ff
+    padding-right:10px;
+    text-decoration:none;
+    
 }
