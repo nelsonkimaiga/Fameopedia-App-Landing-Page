@@ -164,3 +164,31 @@ p.lead {
     text-decoration:none;
     
 }
+
+/*countdown timer*/
+#counter {
+   display: none;
+}
+#counter-default {
+    margin: 20px auto;
+}
+#counter-default .inner {
+    text-align: center;
+    border: none;
+    margin: 8px 0;
+    padding: 8px;
+}
+#counter-default .timer-number {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-family:'Agency FB';
+    color:#fff;
+}
+#counter-default  .timer-text {
+    padding: 10px;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:5px;
+    color:#fff;
+}
