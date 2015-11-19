@@ -7,6 +7,7 @@
 <meta name="description" content="">
 <link rel="icon" href="favicon.png">
 	<title>Fameopedia Brands | Coming Soon!</title>
+  <
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 <!-- Optional theme -->
@@ -21,26 +22,14 @@
 <link rel="stylesheet" href="css/slippry.css"/>
 
     <!-- countdown timer -->
-    <script type="text/javascript">
-    var deadline = '31/12/2015';
-
-    function getTimeRemaining(endtime){
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor( (t/1000) % 60 );
-  var minutes = Math.floor( (t/1000/60) % 60 );
-  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-  var days = Math.floor( t/(1000*60*60*24) );
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-
-getTimeRemaining(deadline).minutes
-
+<script>
+  var clock = document.getElementById("countdown-holder")
+    , targetDate = new Date(2050, 00, 01); // Jan 1, 2050;
+ 
+  clock.innerHTML = countdown(targetDate).toString();
+  setInterval(function(){
+    clock.innerHTML = countdown(targetDate).toString();
+  }, 1000);
 </script>
 
 </head>
@@ -79,26 +68,62 @@ getTimeRemaining(deadline).minutes
     </div>
     <p class="lead">Fameopedia is an app that helps you view, push organise and market your own brand.</p>
     
-<div id="clockdiv">
+<!-- <div id="clockdiv">
 	<h5 class="lead2">We're launching sooon in ...</h5>
-	<script type="text/javascript">
-function initializeClock(id, endtime){
-  var clock = document.getElementById(id);
-  var timeinterval = setInterval(function(){
-    var t = getTimeRemaining(endtime);
-    clock.innerHTML = 'days: ' + t.days + '<br>' +
-                      'hours: '+ t.hours + '<br>' +
-                      'minutes: ' + t.minutes + '<br>' +
-                      'seconds: ' + t.seconds;
-    if(t.total<=0){
-      clearInterval(timeinterval);
-    }
-  },1000);
-}
-initializeClock('clockdiv', deadline);
 
-	</script>
-</div>
+
+</div> -->
+
+<div class="row">
+            <div class="col-md-4 col-md-offset-4 col-sm-12">
+                <div id="movingicon">
+                      <i class="fa fa-flask fa-spin icon-color"></i>
+                    <br />   
+                  <div id="headLine"></div>   
+                </div>              
+            </div>
+             <!--/. HEAD LINE DIV-->
+            <div class="col-md-8 col-md-offset-2" >
+                <div id="counter"></div>
+                        <div id="counter-default" class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <div id="day-number" class="timer-number"></div>
+                                    <div class="timer-text">DAYS</div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <div id="hour-number" class="timer-number"></div>
+                                    <div class="timer-text">HOURS</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <div id="minute-number" class="timer-number"></div>
+                                    <div class="timer-text">MINUTES</div>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="inner">
+                                    <div id="second-number" class="timer-number"></div>
+                                    <div class="timer-text">SECOND</div>
+
+                                   
+
+                                </div>
+                            </div>
+                        </div>
+                
+            </div>
+               <!--/. COUNTER DIV-->
+
+
+
+
 
     <ul class="stores trimmed_list">
     <li><a href="#"><img src="img/android.png"></a></li>
@@ -128,6 +153,8 @@ initializeClock('clockdiv', deadline);
       </div>
     </form>
     	
-    </div>  
+    </div> 
+
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
 </body>
 </html>
