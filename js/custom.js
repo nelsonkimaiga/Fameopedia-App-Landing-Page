@@ -1,16 +1,3 @@
-
-
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-
 (function ($) {
     "use strict";
     var mainApp = {
@@ -22,21 +9,21 @@
             $(function () {
                 $.vegas('slideshow', {
                     backgrounds: [
-                      { src: 'assets/img/1.jpg', fade: 1000, delay: 9000 }, //CHANGE THESE IMAGES WITH YOUR ORIGINAL IMAGES
-                      { src: 'assets/img/2.jpg', fade: 1000, delay: 9000 }, //THESE IMAGES ARE FOR DEMO PURPOSE ONLY YOU, CAN NOT USE THEM WITHOUT AUTHORS PERMISSION
-                       { src: 'assets/img/3.jpg', fade: 1000, delay: 9000 }, //SEE DOCUMENTATION FOR ORIGINAL URLs/LINKs OF IMAGES
+                      { src: 'img/background.jpg', fade: 1000, delay: 9000 },
+                      { src: 'img/background2.jpg', fade: 1000, delay: 9000 }, 
+                       { src: 'assets/img/3.jpg', fade: 1000, delay: 9000 }, 
                      
                     ]
                 })('overlay', {
                     /** SLIDESHOW OVERLAY IMAGE **/
-                    src: 'assets/plugins/vegas/overlays/15.png' // THERE ARE TOTAL 01 TO 15 .png IMAGES AT THE PATH GIVEN, WHICH YOU CAN USE HERE
+                    src: 'assets/plugins/vegas/overlays/15.png' // images load
                 });
 
             });
 
             $(function () {
                 var $header = $("#headLine");
-                var header = ['WORKING..', 'LOADING..']; // CHANGE TEXT HERE TO YOUR TEXT , YOU CAN USE MANY WORDS SEPRATED BY , 
+                var header = ['WE', 'ARE', 'LAUNCHING', 'IN..']; // CHANGE TEXT HERE TO YOUR TEXT , YOU CAN USE MANY WORDS SEPRATED BY , 
 
                 var position = -1;
 
