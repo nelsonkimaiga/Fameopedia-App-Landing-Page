@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <link rel="icon" href="favicon.png">
 	<title>Fameopedia Brands | Coming Soon!</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -19,7 +19,6 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-<link rel="stylesheet" href="css/slippry.css"/>
 </head>
 
 <body>
@@ -34,9 +33,8 @@
                     <li><img src="img/slider-1.png"></li>
                     <li><img src="img/slider-2.png"></li>
                     <li><img src="img/slider-3.png"></li>
-                </ul>  
-
-            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+                </ul>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
             <script src="js/slippry.min.js"></script>
             <script type="text/javascript">
               jQuery(document).ready(function(){
@@ -56,6 +54,7 @@
     <h5>Fameopedia is a mobile app that enables brands organize their information and boost their visibility.</h5>
     
 	<h5 class="lead2">WE'RE LAUNCHING SOON IN...</h5>
+
   <!-- timer -->
 <div class="row">
             <div class="col-md-4 col-md-offset-4 col-sm-12">
@@ -105,6 +104,24 @@
             </div>
                <!--/. COUNTER DIV-->
 </div>
+<!-- Alternative countdown Javascript with flipping clock -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            var clock;
+
+            var date = new Date(2015, 10, 27);
+            var now = new Date();
+            var diff = (date.getTime()/1000) - (now.getTime()/1000);
+
+            clock = $('#clockdiv').FlipClock(diff,{
+                clockFace: 'DailyCounter',
+                countdown: true
+            });  
+        });
+    </script>
+
+
+
 
 <!-- playstore button -->
     <ul class="stores trimmed_list">
