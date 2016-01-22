@@ -19,7 +19,7 @@ body {
   background: #371115 url(../img/background.jpg) top center no-repeat;
   color: #FFF;
   padding-top: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', serif;
   font-weight:400;  
   }
 
@@ -196,15 +196,15 @@ p.lead {
 }
 
 /*moving icon*/
-#movingicon {
+/*#movingicon {
     margin-top:2px;
     text-align:center;
-    vertical-align:central;
-    color:rgb(255, 153, 0);
-    font-weight:900;
-    font-size:40px;
-    letter-spacing:3px;
-}
+    /*vertical-align:central;*/
+    /*color:rgb(255, 153, 0);*/
+    /*font-weight:900;*/
+    /*font-size:40px;*/
+    /*letter-spacing:3px;*/
+}*/
 
 .icon-color{
     color:#3366ff;
